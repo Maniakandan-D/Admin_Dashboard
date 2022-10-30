@@ -37,6 +37,12 @@ import { ReferenceInfoComponent } from './reference-info/reference-info.componen
 import { EmergencyContactInfoComponent } from './emergency-contact-info/emergency-contact-info.component';
 import { PersonalComponent } from './personal-info/personal.component';
 import { ReferenceComponent } from './reference-info/referencecomponent';
+import { DateOfJoiningInfoComponent } from './date-of-joining-info/date-of-joining-info.component';
+import { MatTableModule } from '@angular/material/table';
+import { JobHistoryComponent } from './job-history-info/job-history.component';
+import { EductionalComponent } from './eductional-info/eductional.component';
+import { NomineeComponent } from './nominee-info/nominee.component';
+import { DependentComponent } from './dependent-info/dependent.component';
 
 
 @NgModule({
@@ -60,6 +66,7 @@ import { ReferenceComponent } from './reference-info/referencecomponent';
     FileUploadModule,
     RouterModule.forChild(FormsRoutes),
     MatButtonToggleModule,
+    MatTableModule
   ],
   declarations: [
     RichTextEditorComponent,
@@ -78,7 +85,12 @@ import { ReferenceComponent } from './reference-info/referencecomponent';
     ReferenceInfoComponent, 
     EmergencyContactInfoComponent,
     PersonalComponent,
-    ReferenceComponent
+    ReferenceComponent,
+    JobHistoryComponent,
+    DateOfJoiningInfoComponent,
+    EductionalComponent,
+    NomineeComponent,
+    DependentComponent
   ],
 })
 export class AppFormsModule { }

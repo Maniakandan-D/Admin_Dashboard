@@ -14,7 +14,7 @@ export class ReferenceInfoComponent implements OnInit {
 
   ngOnInit(): void {
     this.referenceForm = this.fb.group({
-      userArray: new UntypedFormArray([])
+      userArray: new UntypedFormArray([this.getUserForm()])
     });
   }
 

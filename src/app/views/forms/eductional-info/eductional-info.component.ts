@@ -14,7 +14,7 @@ export class EductionalInfoComponent implements OnInit {
 
   ngOnInit(): void {
     this.educationalForm = this.fb.group({
-      userArray: new UntypedFormArray([])
+      userArray: new UntypedFormArray([this.getUserForm()])
     });
   }
 

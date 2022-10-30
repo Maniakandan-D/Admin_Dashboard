@@ -1,30 +1,29 @@
 import { Component, OnInit } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, UntypedFormArray, UntypedFormControl, Validators } from '@angular/forms';
 
-
 @Component({
-  selector: 'personal-info',
-  templateUrl: './personal-info.component.html',
-  styleUrls: ['./personal-info.component.scss']
+  selector: 'reference-info',
+  templateUrl: './reference-info.component.html',
+  styleUrls: ['./reference-info.component.scss']
 })
-export class PersonalInfoComponent implements OnInit {
+export class ReferenceInfoComponent implements OnInit {
 
-  personalForm = new UntypedFormGroup({});
+  referenceForm = new UntypedFormGroup({});
   
   constructor(private fb:UntypedFormBuilder ) { }
 
   ngOnInit(): void {
-    this.personalForm = this.fb.group({
-      userArray: new UntypedFormArray([this.getUserForm()])
+    this.referenceForm = this.fb.group({
+      userArray: new UntypedFormArray([])
     });
   }
 
   get userArray() {
-    return (<UntypedFormArray>this.personalForm.get('userArray'));
+    return (<UntypedFormArray>this.referenceForm.get('userArray'));
   }
 
   addUser() {
-    if(this.personalForm.valid){
+    if(this.referenceForm.valid){
       this.userArray.push(this.getUserForm());
     }
   }
@@ -34,21 +33,21 @@ export class PersonalInfoComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.personalForm.value);
+    console.log(this.referenceForm.value);
   }
   getUserForm() {
     return this.fb.group({
-      name: new UntypedFormControl('', [
+      referenceName: new UntypedFormControl('', [
         Validators.required
       ]),
-      relationshipControl:new UntypedFormControl('', [
+      mobileNumber: new UntypedFormControl('', [
         Validators.required
       ]),
-      dob: new UntypedFormControl('', [
+      relationshipName:new UntypedFormControl('', [
         Validators.required
-      ]),
+      ])
     });
   }
 
-}
 
+}

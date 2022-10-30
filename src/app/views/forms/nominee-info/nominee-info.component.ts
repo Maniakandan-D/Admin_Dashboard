@@ -14,7 +14,7 @@ export class NomineeInfoComponent implements OnInit {
 
   ngOnInit(): void {
     this.nomineeForm = this.fb.group({
-      userArray: new UntypedFormArray([])
+      userArray: new UntypedFormArray([this.getUserForm()])
     });
   }
 

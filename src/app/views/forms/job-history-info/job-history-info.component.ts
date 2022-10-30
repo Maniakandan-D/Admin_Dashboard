@@ -15,7 +15,7 @@ export class JobHistoryInfoComponent implements OnInit {
 
   ngOnInit(): void {
     this.jobHistoryForm = this.fb.group({
-      userArray: new UntypedFormArray([])
+      userArray: new UntypedFormArray([this.getUserForm()])
     });
   }
 

@@ -21,8 +21,8 @@ import { BasicFormComponent } from './basic-form/basic-form.component';
 import { RichTextEditorComponent } from './rich-text-editor/rich-text-editor.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 
-import { FormsRoutes } from './forms.routing';
-import { WizardComponent } from './wizard/wizard.component';
+import { UserRoutes } from './user.routing';
+import { ProfileComponent } from './profile/profile.component';
 import { BasicInfoComponent } from './basic-info/basic-info.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { BankInfoComponent } from './bank-info/bank-info.component';
@@ -64,14 +64,14 @@ import { DependentComponent } from './dependent-info/dependent.component';
     FlexLayoutModule,
     QuillModule.forRoot(),
     FileUploadModule,
-    RouterModule.forChild(FormsRoutes),
+    RouterModule.forChild(UserRoutes),
     MatButtonToggleModule,
     MatTableModule
   ],
   declarations: [
     RichTextEditorComponent,
     FileUploadComponent,
-    WizardComponent, 
+    ProfileComponent, 
     BasicFormComponent, 
     BasicInfoComponent, 
     BankInfoComponent, 
@@ -93,4 +93,4 @@ import { DependentComponent } from './dependent-info/dependent.component';
     DependentComponent
   ],
 })
-export class AppFormsModule { }
+export class UserModule { }

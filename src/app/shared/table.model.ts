@@ -102,6 +102,13 @@ export class BankInfo {
     ifscCode: string;
     nameInBank:string;
 }
+export class DateOfJoiningInfo {
+    id: string;
+    doj: string;
+    salary: number;
+    location: string;
+    project:string;
+}
 
 export class EmergencyContactInfo {
     id: string;

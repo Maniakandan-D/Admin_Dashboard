@@ -1,4 +1,4 @@
-<mat-card class="p-0">
+<!-- <mat-card class="p-0">
     <mat-card-title class="">
         <div class="card-title-text">Form validation</div>
         <mat-divider></mat-divider>
@@ -102,4 +102,22 @@
             <button mat-raised-button color="primary" [disabled]="basicForm.invalid">Submit</button>
         </form>
     </mat-card-content>
-</mat-card>
+</mat-card> -->
+
+
+<div class="text-center">
+    <input  class="form-control" type="file" accept=".pdf" (change)="onChange($event)">
+
+    <button mat-raised-button color="primary" (click)="onUpload()" class="btn btn-success">
+        Upload
+    </button>
+</div>
+
+<div class="container text-center jumbotron" *ngIf="shortLink">
+    <h2>Preview</h2>
+    <a href="{{shortLink}}">{{shortLink}}</a>
+</div>
+
+<div class="container" *ngIf="loading">
+    <h3>Loading ...</h3>
+</div>

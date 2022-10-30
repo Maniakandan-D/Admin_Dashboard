@@ -14,7 +14,7 @@ export class DependentInfoComponent implements OnInit {
 
   ngOnInit(): void {
     this.dependentForm = this.fb.group({
-      userArray: new UntypedFormArray([])
+      userArray: new UntypedFormArray([this.getUserForm()])
     });
   }
 

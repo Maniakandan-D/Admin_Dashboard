@@ -3,10 +3,10 @@ import { Routes } from '@angular/router';
 import { BasicFormComponent } from './basic-form/basic-form.component';
 import { RichTextEditorComponent } from './rich-text-editor/rich-text-editor.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
-import { WizardComponent } from './wizard/wizard.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
-export const FormsRoutes: Routes = [
+export const UserRoutes: Routes = [
   {
     path: '',
     children: [
@@ -24,9 +24,9 @@ export const FormsRoutes: Routes = [
         component: FileUploadComponent,
         data: { title: 'Upload', breadcrumb: 'UPLOAD' }
       }, {
-        path: 'wizard',
-        component: WizardComponent,
-        data: { title: 'Wizard', breadcrumb: 'WIZARD' }
+        path: 'profile',
+        component: ProfileComponent,
+        data: { title: 'Profile', breadcrumb: 'PROFILE' }
       }]
   }
 ];

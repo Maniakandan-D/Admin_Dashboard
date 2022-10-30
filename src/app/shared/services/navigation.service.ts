@@ -36,30 +36,30 @@ export class NavigationService {
       icon: 'dashboard',
     },
     {
-      name: 'FORMS',
+      name: 'USER',
       type: 'separator'
     },
     {
       name: 'BASIC',
-      state: 'forms/basic',
+      state: 'user/basic',
       type: 'link',
       icon: 'description',
     },
     {
       name: 'EDITOR',
-      state: 'forms/editor',
+      state: 'user/editor',
       type: 'link',
       icon: 'subject',
     },
     {
       name: 'UPLOAD',
-      state: 'forms/upload',
+      state: 'user/upload',
       type: 'link',
       icon: 'upload',
     },
     {
-      name: 'WIZARD',
-      state: 'forms/wizard',
+      name: 'PROFILE',
+      state: 'user/profile',
       type: 'link',
       icon: 'grain',
     },

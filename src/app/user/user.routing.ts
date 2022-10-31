@@ -1,19 +1,18 @@
 import { Routes } from '@angular/router';
 
-import { BasicFormComponent } from './basic-form/basic-form.component';
-import { RichTextEditorComponent } from './rich-text-editor/rich-text-editor.component';
-import { FileUploadComponent } from './file-upload/file-upload.component';
-import { ProfileComponent } from './profile/profile.component';
-
+import { BasicFormComponent } from './profile/basic-form/basic-form.component';
+import { RichTextEditorComponent } from './profile/rich-text-editor/rich-text-editor.component';
+import { FileUploadComponent } from './profile/file-upload/file-upload.component';
+import { ProfileComponent } from './profile/profile/profile.component';
 
 export const UserRoutes: Routes = [
   {
     path: '',
     children: [
       {
-        path: 'basic',
+        path: 'table',
         component: BasicFormComponent,
-        data: { title: 'Basic', breadcrumb: 'BASIC' }
+        data: { title: 'Table', breadcrumb: 'Table' }
       },
       {
         path: 'editor',

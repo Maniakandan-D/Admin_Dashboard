@@ -36,12 +36,12 @@ export class NavigationService {
       icon: 'dashboard',
     },
     {
-      name: 'USER',
+      name: 'User',
       type: 'separator'
     },
     {
-      name: 'BASIC',
-      state: 'user/basic',
+      name: 'Table',
+      state: 'user/table',
       type: 'link',
       icon: 'description',
     },

@@ -37,8 +37,8 @@ export const rootRouterConfig: Routes = [
       },
       {
         path: 'user',
-        loadChildren: () => import('./views/user/user.module').then(m => m.UserModule),
-        data: { title: 'User', breadcrumb: 'USER'}
+        loadChildren: () => import('./user/user.module').then(m => m.UserModule),
+        data: { title: 'User', breadcrumb: 'User'}
       },
       
       {

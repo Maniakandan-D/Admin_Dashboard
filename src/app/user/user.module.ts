@@ -17,33 +17,32 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { QuillModule } from 'ngx-quill';
 import { FileUploadModule } from 'ng2-file-upload';
 
-import { BasicFormComponent } from './basic-form/basic-form.component';
-import { RichTextEditorComponent } from './rich-text-editor/rich-text-editor.component';
-import { FileUploadComponent } from './file-upload/file-upload.component';
+import { BasicFormComponent } from './profile/basic-form/basic-form.component';
+import { RichTextEditorComponent } from './profile/rich-text-editor/rich-text-editor.component';
+import { FileUploadComponent } from './profile/file-upload/file-upload.component';
 
 import { UserRoutes } from './user.routing';
-import { ProfileComponent } from './profile/profile.component';
-import { BasicInfoComponent } from './basic-info/basic-info.component';
+import { ProfileComponent } from './profile/profile/profile.component';
+import { BasicInfoComponent } from './profile/basic-info/basic-info.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { BankInfoComponent } from './bank-info/bank-info.component';
-import { SpouseInfoComponent } from './spouse-info/spouse-info.component';
-import { JobHistoryInfoComponent } from './job-history-info/job-history-info.component';
-import { PersonalInfoComponent } from './personal-info/personal-info.component';
-import { EductionalInfoComponent } from './eductional-info/eductional-info.component';
-import { CommunicationInfoComponent } from './communication-info/communication-info.component';
-import { NomineeInfoComponent } from './nominee-info/nominee-info.component';
-import { DependentInfoComponent } from './dependent-info/dependent-info.component';
-import { ReferenceInfoComponent } from './reference-info/reference-info.component';
-import { EmergencyContactInfoComponent } from './emergency-contact-info/emergency-contact-info.component';
-import { PersonalComponent } from './personal-info/personal.component';
-import { ReferenceComponent } from './reference-info/referencecomponent';
-import { DateOfJoiningInfoComponent } from './date-of-joining-info/date-of-joining-info.component';
+import { BankInfoComponent } from './profile/bank-info/bank-info.component';
+import { SpouseInfoComponent } from './profile/spouse-info/spouse-info.component';
+import { JobHistoryInfoComponent } from './profile/job-history-info/job-history-info.component';
+import { PersonalInfoComponent } from './profile/personal-info/personal-info.component';
+import { EductionalInfoComponent } from './profile/eductional-info/eductional-info.component';
+import { CommunicationInfoComponent } from './profile/communication-info/communication-info.component';
+import { NomineeInfoComponent } from './profile/nominee-info/nominee-info.component';
+import { DependentInfoComponent } from './profile/dependent-info/dependent-info.component';
+import { ReferenceInfoComponent } from './profile/reference-info/reference-info.component';
+import { EmergencyContactInfoComponent } from './profile/emergency-contact-info/emergency-contact-info.component';
+import { PersonalComponent } from './profile/personal-info/personal.component';
+import { ReferenceComponent } from './profile/reference-info/referencecomponent';
+import { DateOfJoiningInfoComponent } from './profile/date-of-joining-info/date-of-joining-info.component';
 import { MatTableModule } from '@angular/material/table';
-import { JobHistoryComponent } from './job-history-info/job-history.component';
-import { EductionalComponent } from './eductional-info/eductional.component';
-import { NomineeComponent } from './nominee-info/nominee.component';
-import { DependentComponent } from './dependent-info/dependent.component';
-
+import { JobHistoryComponent } from './profile/job-history-info/job-history.component';
+import { EductionalComponent } from './profile/eductional-info/eductional.component';
+import { NomineeComponent } from './profile/nominee-info/nominee.component';
+import { DependentComponent } from './profile/dependent-info/dependent.component';
 
 @NgModule({
   imports: [
